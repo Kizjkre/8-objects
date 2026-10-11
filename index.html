@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/2.3.4/p5.min.js"
-            integrity="sha512-zGE8CPs+hefOAOSuF8c8Hbt/DDoL+hsJax12U8UCPomxYkPMf4qhQmJTwSG7KzDjmemumjHFF13pUpouT4Ka1A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
     <script src="script.js" defer type="module"></script>
     <title>Life Events</title>
   </head>
@@ -13,33 +11,120 @@
     <div id="timeline">
       <div id="playhead"></div>
       <div id="percent-container">
-        <!--        <p id="percent">12:00 AM</p>-->
         <p id="percent">0.0%</p>
       </div>
-      <div class="ticon" id="trock"></div>
+      <div class="ticon" id="tchestnut"></div>
       <div class="ticon" id="tpencil"></div>
       <div class="ticon" id="tcoin"></div>
-      <div class="ticon" id="tstick"></div>
-      <div class="ticon" id="tbell"></div>
+      <div class="ticon" id="trock"></div>
+      <div class="ticon" id="tmatchbox"></div>
+      <div class="ticon" id="tvelcro"></div>
       <div class="ticon" id="tpaper"></div>
+      <div class="ticon" id="tstick"></div>
     </div>
     <button class="sample" id="rock">
-      <span>Desert boulder by Leigh Garland [CC-BY] via Poly Pizza</span>
+      <model-viewer oncontextmenu="return false;" class="w-full h-full" src="assets/rock/model.glb"
+                    alt="Stone by Poly by Google [CC-BY] via Poly Pizza"
+                    auto-rotate="true" shadow-intensity="1" interaction-prompt="false"
+                    loading="eager" camera-orbit="0.87089rad 1.31884rad 110%m"
+                    enable-pan="true" field-of-view="42deg" max-field-of-view="42deg" data-js-focus-visible=""
+                    ar-status="not-presenting">
+        <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+        </div>
+      </model-viewer>
+      <span>Stone by Poly by Google [CC-BY] via Poly Pizza</span>
     </button>
     <button class="sample" id="pencil">
+      <model-viewer oncontextmenu="return false;" class="w-full h-full" src="assets/pencil/model.glb"
+                    alt="Pencil by Poly by Google [CC-BY] via Poly Pizza"
+                    auto-rotate="true" shadow-intensity="1" interaction-prompt="false"
+                    loading="eager" camera-orbit="0.87089rad 1.31884rad 110%m"
+                    enable-pan="true" field-of-view="42deg" max-field-of-view="42deg" data-js-focus-visible=""
+                    ar-status="not-presenting">
+        <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+        </div>
+      </model-viewer>
       <span>Pencil by Poly by Google [CC-BY] via Poly Pizza</span>
     </button>
     <button class="sample" id="coin">
-      <span>Gold Coin by Zsky [CC-BY] via Poly Pizza</span>
+      <model-viewer oncontextmenu="return false;" class="w-full h-full" src="assets/coin/model.glb"
+                    alt="Coin by Quaternius"
+                    auto-rotate="true" shadow-intensity="1" interaction-prompt="false"
+                    loading="eager" camera-orbit="0.87089rad 1.31884rad 110%m"
+                    enable-pan="true" field-of-view="42deg" max-field-of-view="42deg" data-js-focus-visible=""
+                    ar-status="not-presenting">
+        <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+        </div>
+      </model-viewer>
+      <span>Coin by Quaternius</span>
     </button>
     <button class="sample" id="stick">
-      <span>Twig by Kenney</span>
+      <model-viewer oncontextmenu="return false;" class="w-full h-full" src="assets/stick/model.glb"
+                    alt="Stick by Chris Lee [CC-BY] via Poly Pizza"
+                    auto-rotate="true" shadow-intensity="1" interaction-prompt="false"
+                    loading="eager" camera-orbit="0.87089rad 1.31884rad 110%m"
+                    enable-pan="true" field-of-view="42deg" max-field-of-view="42deg" data-js-focus-visible=""
+                    ar-status="not-presenting">
+        <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+        </div>
+      </model-viewer>
+      <span>Stick by Chris Lee [CC-BY] via Poly Pizza</span>
     </button>
-    <button class="sample" id="bell">
-      <span>Bell by Poly by Google [CC-BY] via Poly Pizza</span>
+    <button class="sample" id="velcro">
+      <model-viewer oncontextmenu="return false;" class="w-full h-full" src="assets/velcro/model.glb"
+                    alt="Time Hotel 5.25 Painters Tape by S. Paul Michael [CC-BY] via Poly Pizza"
+                    auto-rotate="true" shadow-intensity="1" interaction-prompt="false"
+                    loading="eager" camera-orbit="0.87089rad 1.31884rad 110%m"
+                    enable-pan="true" field-of-view="42deg" max-field-of-view="42deg" data-js-focus-visible=""
+                    ar-status="not-presenting">
+        <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+        </div>
+      </model-viewer>
+      <span>Time Hotel 5.25 Painters Tape by S. Paul Michael [CC-BY] via Poly Pizza</span>
     </button>
     <button class="sample" id="paper">
+      <model-viewer oncontextmenu="return false;" class="w-full h-full" src="assets/paper/model.glb"
+                    alt="Small Stack of Paper by Jarlan Perez [CC-BY] via Poly Pizza"
+                    auto-rotate="true" shadow-intensity="1" interaction-prompt="false"
+                    loading="eager" camera-orbit="0.87089rad 1.31884rad 110%m"
+                    enable-pan="true" field-of-view="42deg" max-field-of-view="42deg" data-js-focus-visible=""
+                    ar-status="not-presenting">
+        <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+        </div>
+      </model-viewer>
       <span>Small Stack of Paper by Jarlan Perez [CC-BY] via Poly Pizza</span>
+    </button>
+    <button class="sample" id="chestnut">
+      <model-viewer oncontextmenu="return false;" class="w-full h-full" src="assets/chestnut/model.glb"
+                    alt="Acorn by Poly by Google [CC-BY] via Poly Pizza"
+                    auto-rotate="true" shadow-intensity="1" interaction-prompt="false"
+                    loading="eager" camera-orbit="0.87089rad 1.31884rad 110%m"
+                    enable-pan="true" field-of-view="42deg" max-field-of-view="42deg" data-js-focus-visible=""
+                    ar-status="not-presenting">
+        <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+        </div>
+      </model-viewer>
+      <span>Acorn by Poly by Google [CC-BY] via Poly Pizza</span>
+    </button>
+    <button class="sample" id="matchbox">
+      <model-viewer oncontextmenu="return false;" class="w-full h-full" src="assets/matchbox/model.glb"
+                    alt="matchbox open by Justin Randall [CC-BY] via Poly Pizza"
+                    auto-rotate="true" orientation="45deg 0deg 135deg" shadow-intensity="1" interaction-prompt="false"
+                    loading="eager" camera-orbit="0.87089rad 1.31884rad 110%m"
+                    enable-pan="true" field-of-view="42deg" max-field-of-view="42deg" data-js-focus-visible=""
+                    ar-status="not-presenting">
+        <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+        </div>
+      </model-viewer>
+      <span>matchbox open by Justin Randall [CC-BY] via Poly Pizza</span>
     </button>
     <button id="reset">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -50,7 +135,7 @@
         <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4" />
       </svg>
     </button>
-    <a href="https://www.github.com/l42i/life-events" id="github" target="life-events">
+    <a href="https://github.com/Kizjkre/8-objects" id="github" target="life-events">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github">

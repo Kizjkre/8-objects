@@ -46,10 +46,10 @@ body {
   background: var(--base);
   display: grid;
   font-family: sans-serif;
-  grid-template-areas: 'timeline timeline timeline'
-                       'rock pencil coin'
-                       'bell paper stick';
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 'timeline timeline timeline timeline'
+                       'chestnut pencil coin rock'
+                       'matchbox velcro paper stick';
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 8fr 2fr 2fr;
   height: 100dvh;
   margin: 0;
@@ -71,6 +71,10 @@ button {
   }
 }
 
+html {
+  overflow: hidden;
+}
+
 .sample {
   align-items: end;
   background: var(--surface-0);
@@ -85,10 +89,14 @@ button {
     filter: grayscale(100%);
   }
 
-  & > canvas {
+  & > model-viewer {
+    box-sizing: border-box;
+    height: 100%;
+    left: 0;
+    padding: 2em;
     position: absolute;
     top: 0;
-    left: 0;
+    width: 100%;
   }
 }
 
@@ -99,8 +107,8 @@ button {
   transform: translate(-50%, -50%);
 }
 
-#bell {
-  grid-area: bell;
+#chestnut {
+  grid-area: chestnut;
 }
 
 #coin {
@@ -112,6 +120,10 @@ button {
   display: flex;
   justify-content: center;
   right: 2dvw !important;
+}
+
+#matchbox {
+  grid-area: matchbox;
 }
 
 #paper {
@@ -154,7 +166,7 @@ button {
   position: absolute;
   height: 5dvh;
   top: 2dvh;
-  right: calc(2dvw + 5dvw);
+  right: 15dvw;
   z-index: 2;
 
   & > svg {
@@ -168,7 +180,19 @@ button {
   grid-area: stick;
 }
 
+#tchestnut {
+  transform: translateX(-25%);
+}
+
 #timeline {
   grid-area: timeline;
   position: relative;
+}
+
+#tstick {
+  transform: translateX(-75%);
+}
+
+#velcro {
+  grid-area: velcro;
 }
